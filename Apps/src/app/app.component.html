@@ -2,6 +2,10 @@
 
 
 <div id="CHECKER">
-    <button mat-raised-button color="primary">Basic</button>
-    
+    <mat-form-field class="container">
+        <input matInput placeholder="Add Item" id="inputVal">
+    </mat-form-field>
+
+    <button mat-flat-button color="primary" (click)="ItemSelect()" >Add Item</button>
+    <mat-card id="card">{{Item}}</mat-card>
 </div>

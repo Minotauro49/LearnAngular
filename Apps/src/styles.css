@@ -8,7 +8,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 #CHECKER{
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    position: relative;
+    left:calc(50% - 10em);
+    padding-top: 5em;
+    width:20em;
+}
+
+#card{
+    width: 9em;
+}
+
+.container{
+    margin-right: 20px;
 }
