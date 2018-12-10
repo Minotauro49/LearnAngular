@@ -3,19 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularFireModule } from '@angular/fire';
+import { BasicsComponent } from './basics/basics.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BasicScrollCom
+    BasicsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    ScrollingModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
