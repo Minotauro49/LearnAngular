@@ -1,11 +1,13 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 <div id="CHECKER">
     <mat-form-field class="container">
-        <input matInput placeholder="Add Item" id="inputVal">
+        <input matInput placeholder="Add Item" name="todo" #myVariable ngModel>
     </mat-form-field>
 
-    <button mat-flat-button color="primary" (click)="ItemSelect()" >Add Item</button>
-    <mat-card id="card">{{Item}}</mat-card>
+    <button mat-flat-button color="primary" (click)="ItemSelect(myVariable)" >Add Item</button>
+    <ol>
+        <li *ngFor="let todo of todoArray" #ol>{{todo}}<i class="material-icons" (click)="deleteItem(ol)">delete</i></li>
+    </ol>
 </div>
