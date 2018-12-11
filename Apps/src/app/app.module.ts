@@ -29,10 +29,5 @@ import { MatButtonModule, MatMenuModule, MatToolbarModule, MatIconModule, MatCar
 })
 
 export class AppModule{
-  // ItemSelect() {
-  //   console.log(0);
-
-  // }
-
 
  }

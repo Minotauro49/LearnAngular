@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-root',
@@ -7,5 +10,17 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'Apps';
+  todoArray = []
+
+  ItemSelect(d) {
+    this.todoArray.push(d.value);
+    console.log(this.todoArray)
+  }
+
+
+  deleteItem(cont){
+    this.todoArray.splice($("LI").index(cont),1);
+  }
+
+
 }

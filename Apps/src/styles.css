@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 /* @import '~@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -20,4 +21,27 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .container{
     margin-right: 20px;
+}
+
+
+ol{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+li{
+ background: #fff;
+ border-left: 4px solid #F97300;
+ padding: 1em;
+ margin: 1em auto;
+ color: rgb(22, 22, 22);
+ font-family: "Raleway";
+}
+li i{
+    float: right;
+    color: #888;
+    cursor: pointer;
 }
